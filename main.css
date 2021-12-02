@@ -1,0 +1,363 @@
+body {
+  font-family: Poppins;
+  margin: 0;
+  background-color: #cdc2b5;
+  z-index: -1;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: minmax(175px, auto);
+      grid-template-rows: minmax(175px, auto);
+      grid-template-areas: "header header  header"  "main   main    main" "logo   detail  surprise" ".      new     ." "footer footer  footer";
+  height: 100vh;
+  grid-gap: 10px;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+  background: #4f2f28;
+}
+
+header #header-logo {
+  width: 500px;
+  justify-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-bottom: 0;
+  padding: 30px;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: main;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+main #drink-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  margin: 1rem 0;
+  max-width: calc(100vw - 2rem);
+}
+
+main #drink-menu img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  height: 150px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+main #drink-menu img:last-child {
+  margin-right: 0;
+}
+
+.logo {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.logo .bottle-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 400px;
+  justify-items: center;
+  margin: auto;
+}
+
+.featured {
+  margin: auto;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  margin-top: 0px;
+}
+
+.featured #drink-container {
+  text-align: center;
+  border: grey solid 1px;
+  background-color: #f4f3ed;
+  padding: 1rem;
+  width: 15rem;
+  height: 28rem;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  overflow: auto;
+}
+
+.featured #feature-banner {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #f4f3ed;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+  background-color: #4f2f28;
+  display: block;
+  text-align: center;
+  padding: 15px;
+}
+
+.featured #drink-name {
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.featured #drink-img {
+  margin-top: 0px;
+  width: 300px;
+  background-color: #f4f3ed;
+  padding: 15px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.featured #drink-glass {
+  margin-top: 0px;
+}
+
+.featured #drink-likes {
+  font-size: .75cm;
+  color: #363685;
+  text-decoration: none;
+  border: none;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f4f3ed;
+  text-align: right;
+}
+
+.new {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: new;
+  margin: auto;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  margin-top: 0px;
+}
+
+.new #new-banner {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #f4f3ed;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+  background-color: #4f2f28;
+  display: block;
+  text-align: center;
+  padding: 15px;
+}
+
+.new #pp-logo {
+  height: 200px;
+  background-color: #363685;
+  padding: 15px;
+  border-radius: 15px;
+  justify-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-bottom: 0;
+  padding: 30px;
+}
+
+.new #new-drink h2 {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  justify-self: center;
+}
+
+.new #new-drink {
+  background-color: #a88c76;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: auto;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  justify-items: center;
+  margin-bottom: 50px;
+}
+
+input[type="submit"] {
+  border-radius: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px;
+  width: 200px;
+  display: block;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  background-color: #4f2f28;
+  cursor: pointer;
+  color: white;
+  position: relative;
+  top: 10px;
+}
+
+input[type="submit"]:active {
+  background-color: gray;
+}
+
+.surprise {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: surprise;
+  margin: auto;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0px;
+}
+
+.surprise #surp-banner {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #f4f3ed;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+  background-color: #4f2f28;
+  display: block;
+  text-align: center;
+  padding: 15px;
+}
+
+.surprise #sup-container {
+  text-align: center;
+  border: grey solid 1px;
+  background-color: #f4f3ed;
+  padding: 1rem;
+  width: 15rem;
+  height: 25rem;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  overflow: auto;
+}
+
+.surprise #sup {
+  width: 300px;
+  background-color: #f4f3ed;
+  padding: 15px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.surprise #surprise-me {
+  border-radius: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px;
+  height: 1.25cm;
+  width: 200px;
+  display: block;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  background-color: #363685;
+  cursor: pointer;
+  color: white;
+  position: relative;
+  top: 10px;
+}
+
+.footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  margin-top: 0;
+  background-color: #4f2f28;
+}
+/*# sourceMappingURL=main.css.map */
+
+.logo #music-container {
+  text-align: center;
+  border: grey solid 1px;
+  background-color: #4f2f28;
+  color: white;
+  padding: 1rem;
+  width: 20rem;
+  height: 20rem;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  overflow: auto;
+  display: block;
+}
+
+.logo #music-container #music-header {
+  text-align: center;
+  border: grey solid 1px;
+  color: rgb(248, 248, 248);
+  background-color: #000000;
+  letter-spacing: 10px;
+}

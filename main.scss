@@ -1,0 +1,364 @@
+$colors: (
+    primary: #4f2f28,
+    primary-light: lighten(#322820, 40%),
+    primary-dark: darken(#322820, 40%),
+    accent: #f4f3ed
+);
+
+$padding: 15px;
+$borders: 15px;
+
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+
+body {
+    font-family: Poppins;
+    margin: 0;
+    background-color: rgb(205, 194, 181);
+    z-index: -1;
+    }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(175px, auto);
+    grid-template-areas:
+        "header header  header" 
+        "main   main    main"
+        "logo   detail  surprise"
+        ".      new     ."
+        "footer footer  footer";
+    height: 100vh;
+    grid-gap: 10px;
+}
+
+header {
+    grid-area: header;
+    background: color(primary);
+
+    #header-logo {
+        width: 500px;
+        justify-items: center;
+        display: flex;
+        margin: auto;
+        margin-bottom: 0;
+        padding: 30px;
+    }
+}
+
+main {
+    grid-area: main;
+    justify-content: center;
+    align-content: center;
+
+    #drink-menu {
+        display: flex;
+        overflow-x: auto;
+        margin: 1rem 0;
+        max-width: calc(100vw - 2rem);
+      }
+      
+      #drink-menu img {
+        flex: 0 1 auto;
+        height: 150px;
+        margin-right: 0.5rem;
+        cursor: pointer;
+      }
+      
+      #drink-menu img:last-child {
+        margin-right: 0;
+      }
+
+    // #drink-menu{
+	// 		display: grid;
+	// 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    //         grid-template-rows: minmax(150px, auto);
+	// 		grid-gap: 10px;
+    //         padding: 30px;
+    // }
+
+    // #drink-menu p {
+    //     border: 1px solid #fff;
+    //     padding: 20px;
+    //     margin: 0;
+    // }
+
+    // #mule{
+    //     grid-column: 1 / 2;
+    //     width: 200px;
+    //     justify-self: center;
+    //     margin: auto;
+    //     display: flex;
+    //     padding:5px;
+    //     background-color:color(accent);
+    //     box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    // }
+
+    // #lemon{
+    //     grid-column: 2 / 3;
+    //     width: 200px;
+    //     justify-self: center;
+    //     margin: auto;
+    //     display: flex;
+    //     padding:5px;
+    //     background-color:color(accent);
+    //     box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    // }
+
+    // #apoth{
+    //     grid-column: 3 / 4;
+    //     width: 200px;
+    //     justify-self: center;
+    //     margin: auto;
+    //     display: flex;
+    //     padding:5px;
+    //     background-color:color(accent);
+    //     box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    // }
+
+    // #bar{
+    //     grid-column: 4 / 5;
+    //     width: 200px;
+    //     justify-self: center;
+    //     margin: auto;
+    //     display: flex;
+    //     padding:5px;
+    //     background-color:color(accent);
+    //     box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    // }
+
+    // #colors{
+    //     grid-column: 4 / 5;
+    //     width: 200px;
+    //     justify-self: center;
+    //     margin: auto;
+    //     display: flex;
+    //     padding:5px;
+    //     background-color:color(accent);
+    //     box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    // }
+}
+
+.logo {
+    grid-area:logo;
+    justify-content: center;
+    align-content: center;
+
+    .bottle-logo{
+        display: flex;
+        height: 400px;
+        justify-items: center;
+        margin: auto;
+    }
+}
+
+.featured {
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    justify-items: center;
+    margin-top: 0px;
+
+    #drink-container{
+            text-align: center;
+            border: grey solid 1px;
+            background-color: color(accent);
+            padding: 1rem;
+            width: 15rem;
+            height: 25rem;
+            display: inline-grid;
+            margin: 1rem 2rem;
+            overflow: auto;
+        }
+    
+    #feature-banner{
+        margin-top: 0;
+        margin-bottom: 30px;
+        color: color(accent);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2em;
+        background-color: color(primary);
+        display: block;
+        text-align: center;
+        padding: $padding;
+    }
+
+    #drink-name{
+        margin-top: 0px;
+        font-weight: bold;
+    }
+
+    #drink-img{
+        margin-top: 0px;
+        width: 300px;
+        background-color:color(accent);
+        padding:$padding;
+        box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    }
+
+    #drink-glass{
+        margin-top: 0px;
+    }
+
+    #drink-likes{
+        font-size: .75cm;
+        color:rgb(54, 54, 133);
+        text-decoration: none;
+        border: none;
+        display: grid;
+        justify-content: center;
+        background-color: color(accent);
+    }
+}
+
+.new {
+    grid-area: new;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    justify-items: center;
+    margin-top: 0px;
+
+    #new-banner{
+        margin-top: 0;
+        margin-bottom: 30px;
+        color: color(accent);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2em;
+        background-color: color(primary);
+        display: block;
+        text-align: center;
+        padding: $padding;
+    }
+
+    #pp-logo{
+        height: 200px;
+        background-color: rgb(54, 54, 133);
+        padding: $padding;
+        border-radius: $borders;
+        justify-items: center;
+        display: flex;
+        margin: auto;
+        margin-bottom: 0;
+        padding: 30px;
+    }
+
+    #new-drink h2{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-self: center;
+    }
+
+        #new-drink {
+            background-color: color(primary-light);
+            border-radius: $borders;
+            box-shadow: 0 10px 30px rgba(0,0,0,.2);
+            padding: 20px;
+            margin: auto;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-items: center;
+            margin-bottom: 50px;
+        }
+
+}
+
+input[type="submit"] {
+    border-radius: $borders;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px;
+    width: 200px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    background-color: color(primary);
+    cursor: pointer;
+    color: white;
+    position:relative;
+    top: 10px;
+}
+  
+  input[type="submit"]:active {
+    background-color: gray;
+  }
+
+.surprise {
+    grid-area: surprise;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
+    
+
+    #surp-banner{
+        margin-top: 0;
+        margin-bottom: 30px;
+        color: color(accent);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2em;
+        background-color: color(primary);
+        display: block;
+        text-align: center;
+        padding: $padding;
+    }
+
+    #sup-container{
+        text-align: center;
+        border: grey solid 1px;
+        background-color: color(accent);
+        padding: 1rem;
+        width: 15rem;
+        height: 25rem;
+        display: inline-grid;
+        margin: 1rem 2rem;
+        overflow: auto;
+    }
+
+    #sup {
+        width: 300px;
+        background-color:color(accent);
+        padding:$padding;
+        box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    }
+
+    #surprise-me {
+        border-radius: $borders;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 5px;
+        height: 1.25cm;
+        width: 200px;
+        display: block;
+        text-align: center;
+        margin: 0 auto 0 auto;
+        background-color:rgb(54, 54, 133);
+        cursor: pointer;
+        color: white;
+        position:relative;
+        top: 10px;
+
+    }
+}
+
+.footer {
+    grid-area: footer;
+    margin-top:0;
+    background-color: color(primary);
+}

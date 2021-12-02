@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="./main.css">
+    <script defer src="https://kit.fontawesome.com/fa973cab36.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
+    <title>Pick Your Poison</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <img id="header-logo" src="images/Logo White.png" alt="poison-logo">
+        </header>
+        <main>
+            <div id="drink-menu">
+
+            </div>
+        </main> 
+        <section class="logo">
+            <img src="./images/Poison Logo.png" alt="bottle-logo" class="bottle-logo">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="music-container">
+                <h1 id="music-header">MUSIC </h1>
+                <h4>Escape - Rupert Holmes</h4>
+                <audio controls>
+                    <source src="Musica/d Rupert Holmes - Escape (The Piña Colada Song).mp3" type="audio/mpeg" class="audio">
+                </audio>
+                <h4>Margaritaville - Jimmy Buffett</h4>
+                <audio controls>
+                    <source src="Musica/f Jimmy Buffett - Margaritaville.mp3" type="audio/mpeg" class="audio">
+                </audio>
+            </div>
+        </section>
+        <section class="featured">
+     
+                <h1 id="feature-banner">Featured</h1>
+                <img id="drink-img" src="images/moscow.jpg" alt="">
+            <div id="drink-container">
+                <h3 id="drink-name">Featured Drink Name</h3>
+                <h4 id="drink-glass">Glass Type:</h4>
+                <div id="drink-ing">Ingridients:
+                  <p id="ing">Ingredients List</p>
+                </div>
+                <p id="drink-inst">Recipe</p>
+                <p id="number-of-likes">Like Count: <span id="like-number">0</span></p>
+                <button id="drink-likes">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+            
+        </section>
+        <section class="new">
+            
+            <h1 id="new-banner">What's Your Poison?</h1>
+            <form id="new-drink">
+                <h2>Add Your Favorite Drink!</h2>
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="new-name" />
+                <label for="glass">Glass Type: </label>
+                <input type="text" name="glass" id="new-glass" />
+                <label for="image">Image: </label>
+                <input type="url" name="image" id="new-image" />
+                <label for="ingredients">Ingredients & Measurements: </label>
+                <input type="text" name="ingredients" id="new-ingredients" />
+                <label for="new-instructions">Instructions: </label>
+                <textarea name="new-instructions" id="new-instructions"></textarea>
+                <input type="submit" value="Create" />
+              </form>
+              <img src="./images/PP Logo.png" alt="pp-logo" id="pp-logo">
+        </section>
+        <section class="footer">
+            Footer
+        </section>
+
+        <div class="surprise"> 
+            <h1 id="surp-banner">Feeling Lucky?</h1>
+            <img src="images/surprise.jpg" id=sup alt="surprise">
+            <button id="surprise-me">Surprise Me!</button>
+
+            <div id="sup-container">
+                <h3 id="sup-drink-name">Mystery Drink</h3>
+                <h4 id="sup-drink-glass">Glass Type: ?</h4>
+                <div id="sup-drink-ing">Ingredients: ?
+                <ul>
+                </ul>
+                </div>
+                <p id="sup-drink-inst">Recipe: ?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
