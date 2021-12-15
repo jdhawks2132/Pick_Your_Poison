@@ -1,4 +1,4 @@
-![pick your poison logo](https://github.com/jdhawks2132/phase1_project/blob/main/images/Poison%20Logo.png)
+![pick your poison logo](https://github.com/jdhawks2132/phase1_project/blob/main/images/Logo%20White.png)
 # Pick Your Poison
 
 ## Live Deployment Links
