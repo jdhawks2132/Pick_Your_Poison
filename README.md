@@ -12,6 +12,7 @@ As this application was built during Phase 1 of the Flatiron School's Software E
 ## Development Team
 - [Joshua Hawks](http://www.linkedin.com/in/joshuahawks1)
 - [Rodrigo Alba](http://www.linkedin.com/in/rodrigoqalba)
+- Harris Kim
 
 ## Purpose
 
