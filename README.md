@@ -27,4 +27,7 @@ As this application was built during Phase 1 of the Flatiron School's Software E
   - Design a banner logo
   - Design a "hero" bottle logo
 
+## Utilizes Public API
+- [TheCocktailDB](https://www.thecocktaildb.com/api.php)
+
 
