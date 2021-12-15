@@ -14,11 +14,6 @@ As this application was built during Phase 1 of the Flatiron School's Software E
 - [Rodrigo Alba](http://www.linkedin.com/in/rodrigoqalba)
 - Harris Kim
 
-## Purpose
-
-Aside from learning more in Ruby, Sinatra, and React, a goal was to create a useful application for other students currently enrolled in the Flatiron School. Many students frequent Flatiron slack channels requesting assistance for various lab assignments they are stuck on. A greater need for a more organized method of requesting assistance seemed to be present and we decided to address the issue together.
-
-
 ## Project Planning
 
 - Frontend : As far as the frontend development goes, we had several goals in mind:
