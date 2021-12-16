@@ -2,7 +2,7 @@
 # Pick Your Poison
 
 ## Live Deployment Links
-- [Website](https://jdhawks2132.github.io/phase1_project/)
+- [Website](https://jdhawks2132.github.io/Pick_Your_Poison/)
 
 
 ## Learning Goals
