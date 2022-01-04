@@ -16,7 +16,7 @@ As this application was built during Phase 1 of the Flatiron School's Software E
 
 ## Project Planning
 
-- Frontend : As far as the frontend development goes, we had several goals in mind:
+- Frontend : 
   - The user can see a collection of cocktails and their respective recipes. 
   - The user can click to see a single, mystery cocktail and recipe.
   - The user can upload a recipe of their own.
